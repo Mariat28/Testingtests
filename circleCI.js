@@ -1,5 +1,5 @@
 let x = 9;
-let y = 0;
+let y = 20;
 z = x + y;
 
 function add() {
