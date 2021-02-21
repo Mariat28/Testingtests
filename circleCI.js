@@ -1,4 +1,4 @@
-let x = 9;
+let x = 3;
 let y = 0;
 z = x + y;
 
