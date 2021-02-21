@@ -1,13 +1,9 @@
-version: 2.1
+version: 2.1    
 orbs:
   node: circleci/node@3.0.0
+  docker:
+    -image: circleci/node:10.16
 workflows:
   node-tests:
     jobs:
-      build:
-        docker:
-          image: 'cimg/base:stable'
-        steps:
-          run: npm test
-
-
+      - node/test
