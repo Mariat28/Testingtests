@@ -4,4 +4,10 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test
+      build:
+        docker:
+          image: 'cimg/base:stable'
+        steps:
+          run: npm test
+
+
